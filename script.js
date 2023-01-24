@@ -39,9 +39,9 @@ bestMove = { move: null, score: 0 };
 
 
 function updateScoreboard() {
-    xWinsElement.innerHTML = "X wins: " + xWins;
-    oWinsElement.innerHTML = "O wins: " + oWins;
-    drawsElement.innerHTML = "Draws: " + draws;
+    xWinsElement.innerHTML = "X Venceu: " + xWins;
+    oWinsElement.innerHTML = "O Venceu: " + oWins;
+    drawsElement.innerHTML = "Deu Velha: " + draws;
 }
 
 function init() {
@@ -78,7 +78,7 @@ function checkWin(cell) {
                     oWins++;
                 }
                 updateScoreboard();
-                alert(cell.textContent + " won the game!");
+                alert(cell.textContent + " Venceu a partida!");
                 resetGame();
                 return;
             }
@@ -89,7 +89,7 @@ function checkWin(cell) {
 function checkDraw(){
     if(count === 8 && !gameOver){
         gameOver = true;
-        alert("Game Drawn!");
+        alert("Deu Velha!");
         draws++;
         updateScoreboard();
         resetGame();
