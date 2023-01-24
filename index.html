@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Da Velha</title>
+  <body onload="init()">
+    <div id="container">
+        <div id="scoreboard">
+            <div id="x-wins"></div>
+            <div id="o-wins"></div>
+            <div id="draws"></div>
+        </div>
+    <table id="board">
+      <tr>
+        <td id="0"></td>
+        <td id="1"></td>
+        <td id="2"></td>
+      </tr>
+      <tr>
+        <td id="3"></td>
+        <td id="4"></td>
+        <td id="5"></td>
+      </tr>
+      <tr>
+        <td id="6"></td>
+        <td id="7"></td>
+        <td id="8"></td>
+      </tr>
+    </table>
+    <button id="reset-button">Reset Game</button>
+    <button id="dark-mode-button">Light Mode</button>
+    <script src="script.js"></script>
+  </body>
+</html>

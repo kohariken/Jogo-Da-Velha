@@ -1,0 +1,123 @@
+#board {
+    border-collapse: collapse;
+  }
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #scoreboard {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 10px;
+}
+
+#scoreboard div {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+  td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    transition: color 0.5s ease;
+  }
+
+  .dark td {
+    /* ... */
+    color: white;
+}
+  
+  .x {
+    color: red;
+    font-size: 72px;
+  }
+  
+  .o {
+    color: blue;
+    font-size: 72px;
+  }
+
+  table {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    border-color: black;
+    background-color: white;
+    transition: background-color 0.5s ease;
+    margin-top: 15px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza horizontalmente */
+  height: 100vh; /* Altura total da tela */
+  background-color: white;
+  color: black;
+}
+
+button {
+  position: absolute;
+  bottom: 20px; /* Define a distância do botão para o rodapé */
+  right: 20px; /* Define a distância do botão para o lado direito */
+  width: 120px; /*define o tamanho do botão*/
+  height: 30px; /*define o tamanho do botão*/
+  margin-right:20px; /*define a distancia entre botões*/
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px; /* adiciona bordas arredondadas */
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  /* estilo para quando o cursor estiver em cima do botão */
+  background-color: #ddd;
+}
+
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.dark button {
+  color: white;
+  background-color: #555;
+  border: 1px solid white;
+}
+
+.dark button:hover {
+  /* estilo para quando o cursor estiver em cima do botão no modo escuro */
+  background-color: #777;
+}
+
+.dark table {
+  border-color: white;
+  background-color: #333;
+  
+}
+
+#reset-button {
+  /* ... */
+  position: absolute;
+  bottom: 20px; /* Define a distância do botão para o rodapé */
+  right: 20px; /* Define a distância do botão para o lado direito */
+}
+
+#dark-mode-button {
+  /* ... */
+  position: absolute;
+  bottom: 20px; /* Define a distância do botão para o rodapé */
+  right: 140px; /* Define a distância do botão para o lado direito */
+}
+
